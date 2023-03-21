@@ -1,2 +1,20 @@
+#Assignment 2
+#Create a example on r+,w+,a+ 
 
+myfile=open("file2.txt","r+") # 1st read then write
+print(myfile.read())
+print(myfile.write("Hello everyone"))
+print(myfile.read())
+myfile.close()
+
+myfile=open("file2.txt","w+") #1st write then read
+print(myfile.write("hello"))
+print(myfile.read())
+myfile.close()
+
+myfile=open("file2.txt","a+") # 1st append then read
+print(myfile.write("Welcome"))
+d=myfile.read()
+print(d)
+myfile.close()
 
